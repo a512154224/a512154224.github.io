@@ -11,6 +11,7 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
+  SMGallery: '/tools/Gallery/SMGallery/index.html'
 
 # Footer
 footer:
