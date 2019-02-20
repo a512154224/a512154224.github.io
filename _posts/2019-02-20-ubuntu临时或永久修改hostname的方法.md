@@ -7,7 +7,7 @@ tags: hostname,ubuntu
 ---
 
 ## 1、查看hostname ##
-hostname 或 uname -n
+<xmp>hostname 或 uname -n</xmp>
 ## 2.1、临时修改hostname ##
 hostname new_hostname
 ## 2.2、永久修改hostname ##
