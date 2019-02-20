@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '使用GDList挂载Google Drive和OneDrive网盘，支持多个同时挂载'
+title: '使用GDList挂载Google Drive和OneDrive网盘'
 date: 2019-02-20
 author: 四天
 tags:
