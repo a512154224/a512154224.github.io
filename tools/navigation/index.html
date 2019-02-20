@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<title>四天导航</title>
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="Keywords" content="四天导航,网址导航"/>
+<meta name="Description" content="四天常用的导航页，随时随地访问网站。一个框，全能搜！"/>
+<link href="./css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="./css/frontstyle.css">
+<script src="./assets/js/jquery-3.1.0.min.js"></script>
+<script src="./assets/js/jquery-migrate-3.0.0.min.js"></script>
+
+<style type="text/css">
+body{background-image:url(images/bg.jpg);z-index: -1;background-repeat:no-repeat;background-attachment:fixed;background-size: cover;height: 100%;width: 100%;}
+</style>
+</head>
+
+<body>
+
+<div class="hidden-xs"> 
+<ul class="nav nav-tabs navbar-static-top"role="navigation" >
+
+<div id="header">
+<a class="LOGO1" href="https://www.liangshitian.com/dh"><img id="zb" src="./images/slogo.png"alt="四天导航"></a>
+
+<a href="https://www.liangshitian.com/" target="_blank" class="yb">关于站长</a>
+ 
+</div>
+</ul>
+</div>
+
+<div class="container">
+
+<div class="visible-xs">
+<div class="row sLOGO">
+<div class="col-xs-6 col-xs-offset-3">
+<a href="./index.html"><img id="LOGO" src="./images/slogo.png"alt="Responsive image"></a> 
+<br/>
+</div>
+</div>
+</div>
+
+<div class="hidden-xs"> 
+<div class="row LOGO">
+<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
+<a href="./index.html"><img id="LOGO" src="./images/logo.png"alt="Responsive image"></a>
+</div>
+</div>
+</div>
+
+<div class="input-group input-group-lg">
+<span class="input-group-addon">全能搜</span>
+<form action="http://www.baidu.com/s" method="get" target="_blank">
+<input type="text" class="form-control" name="search" id="search" placeholder="输入关键词，再点击下方相应按钮，即可检索。 " baiduSug="2"value=" " >
+</div>
+<P><center>
+<input type="submit" value="百度" id="baidu" button type="button" class="btn btn-primary" />
+<input type="submit" value="好搜" id="360sou" button type="button" class="btn btn-primary" />
+<input type="submit" value="搜狗" id="sougou" button type="button" class="btn btn-primary" />
+<!--<input type="submit" value="谷歌" id="google" button type="button" class="btn btn-primary"/>-->
+<input type="submit" value="必应" id="bing" button type="button" class="btn btn-primary"/> 
+<input type="submit" value="谷歌" id="google1" button type="button" class="btn btn-primary"/> 
+<input type="submit" value="京东" id="jd" button type="button" class="btn btn-primary" />
+<input type="submit" value="淘宝" id="taobao" button type="button" class="btn btn-primary" />
+<input type="submit" value="微信" id="weixin" button type="button" class="btn btn-primary" />
+<input type="submit" value="知乎" id="zhihu" button type="button" class="btn btn-primary" />
+<input type="submit" value="微博" id="weibo" button type="button" class="btn btn-primary"/>
+<input type="submit" value="豆瓣" id="douban" button type="button" class="btn btn-primary"/>
+<input type="submit" value="音乐" id="gequ" button type="button" class="btn btn-primary"/>
+<input type="submit" value="网盘" id="panci" button type="button" class="btn btn-primary"/>
+<input type="submit" value="地图" id="ditu" button type="button" class="btn btn-primary"/>
+</center></P> 
+</form>
+
+<div class="visible-xs">
+<div class="jumbotron">
+<p id="zhongjian">输入关键词，再点击下方相应按钮，即可检索，默认为百度搜索！<br>随时随地 记住一个就够了！<br>推荐使用电脑访问，效果更好！<br></p>
+<p align="center"><a class="btn btn-success btn-md" href="#" role="button">留言&建议</a></p>
+</div>
+</div>
+<br>
+<br>
+<div class="hidden-xs">
+<br>
+<br>
+<br>
+
+<center>
+<p id="zhongjian">输入关键词，再点击下方相应按钮，即可检索！随时随地</p>
+</center>	
+
+<br>
+<br>
+</div>	
+ 
+</div> 
+<div class="container">
+<table class="table table-responsivetable-striped table-bordered table-hover acitve " >
+<thead>
+<tr class="center">
+<th id="dingbu" colspan="5" >日常生活类</th>
+<th id="dingbu" colspan="5" >快捷服务类</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei" >常用</td>
+<td align="center"><a href="https://www.liangshitian.com/" target="_blank" id="lianjie1">四天博客</a></td>
+<td align="center"><a href="http://bbs.fishc.com/forum.php" target="_blank"id="lianjie">鱼C论坛</a></td>
+<td align="center"><a href="http://3g.lexun.com/" target="_blank" id="lianjie">乐讯社区</a></td>
+<td align="center"><a href="https://translate.google.cn/" target="_blank" id="lianjie">谷歌翻译</a></td>
+
+<td align="center" id="fenlei">图床</td>
+<td align="center"><a href="https://img9.top/" target="_blank" id="lianjie">无限图床</a></td>
+<td align="center"><a href="http://upload.otar.im/" target="_blank" id="lianjie">Otar图床</a></td>
+<td align="center"><a href="https://www.liangshitian.com/smtc/" target="_blank" id="lianjie">SM.MS</a></td>
+<td align="center"><a href="https://www.picb.cc/" target="_blank" id="lianjie">Picb</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">视频</td>
+<td align="center"><a href="http://www.youku.com/" target="_blank" id="lianjie">优酷视频</a></td>
+<td align="center"><a href="http://www.iqiyi.com/" target="_blank"id="lianjie">爱奇艺</a></td>
+<td align="center"><a href="https://www.liangshitian.com/tools/tv/" target="_blank"id="lianjie">电视直播</a></td>
+<td align="center"><a href="https://v.qq.com/" target="_blank" id="lianjie">腾讯视频</a></td>
+
+<td align="center" id="fenlei">邮箱</td>
+<td align="center"><a href="http://email.163.com/" target="_blank" id="lianjie">网易邮箱</a></td>
+<td align="center"><a href="http://mail.10086.cn/" target="_blank" id="lianjie">1 3 9邮箱</a></td>
+<td align="center"><a href="https://www.263.net/" target="_blank" id="lianjie">2 6 3邮箱</a></td>
+<td align="center"><a href="https://mail.qq.com" target="_blank" id="lianjie">Q Q邮箱</a></td>
+</tr>
+</tbody>
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">社交</td>
+<td align="center"><a href="http://weibo.com/" target="_blank" id="lianjie">新浪微博</a></td>
+<td align="center"><a href="http://www.tianya.cn/" target="_blank" id="lianjie">天涯社区</a></td>
+<td align="center"><a href="http://tieba.baidu.com/" target="_blank" id="lianjie">百度贴吧</a></td>
+<td align="center"><a href="https://www.zhihu.com/" target="_blank" id="lianjie">知乎网</a></td>
+
+<td align="center" id="fenlei">求职</td>
+
+<td align="center"><a href="http://www.51job.com/" target="_blank" id="lianjie">前程无忧</a></td>
+<td align="center"><a href="http://www.lagou.com/" target="_blank" id="lianjie">拉勾网</a></td>
+<td align="center"><a href="http://zhaopin.com" target="_blank" id="lianjie">智联招聘</a></td>
+<td align="center"><a href="https://c.liepin.com/" target="_blank" id="lianjie">猎聘网</a></td>
+</tr>
+</tbody>
+	
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">购物</td>
+<td align="center"><a href="http://www.jd.com/" target="_blank" id="lianjie">京东商城</a></td>
+<td align="center"><a href="https://www.taobao.com/" target="_blank" id="lianjie">淘宝购物</a></td>
+<td align="center"><a href="https://www.mi.com/" target="_blank" id="lianjie">小米商城</a></td>
+<td align="center"><a href="https://www.amazon.cn/" target="_blank" id="lianjie">亚马逊网</a></td>
+
+<td align="center" id="fenlei">音乐</td>
+<td align="center"><a href="http://music.163.com/" target="_blank" id="lianjie1">网易音乐</a></td>
+<td align="center"><a href="http://www.yinyuetai.com/" target="_blank" id="lianjie">音悦台</a></td>
+<td align="center"><a href="http://www.xiami.com/" target="_blank" id="lianjie">虾米音乐</a></td>
+<td align="center"><a href="http://www.kuwo.cn/" target="_blank" id="lianjie">酷狗音乐</a></td>
+</tr>
+</tbody>
+	
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">网盘</td>
+<td align="center"><a href="https://pan.baidu.com/" target="_blank"id="lianjie">百度云盘</a></td>
+<td align="center"><a href="https://www.weiyun.com/" target="_blank" id="lianjie">微云云盘</a></td>
+<td align="center"><a href="https://www.jianguoyun.com/" target="_blank"id="lianjie">坚果云盘</a></td>
+<td align="center"><a href="https://teracloud.jp/ja/" target="_blank" id="lianjie">国外网盘</a></td>
+
+<td align="center" id="fenlei">设计</td>
+<td align="center"><a href="http://www.easyicon.net/" target="_blank" id="lianjie">易图标</a></td>
+<td align="center"><a href="http://www.iconfont.cn/" target="_blank" id="lianjie">矢量图标</a></td>
+<td align="center"><a href="http://www.yeahzan.com/fa/facss.html" target="_blank" id="lianjie">F A图标</a></td>
+<td align="center"><a href="http://588ku.com/?h=bd" target="_blank" id="lianjie">千库网</a></td>
+</tr>
+</tbody>
+
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">资讯</td>
+<td align="center"><a href="https://www.btime.com/" target="_blank" id="lianjie">北京时间</a></td>
+<td align="center"><a href="http://news.163.com/" target="_blank"id="lianjie">网易新闻</a></td>
+<td align="center"><a href="http://news.qq.com/" target="_blank" id="lianjie">腾讯新闻</a></td>
+<td align="center"><a href="http://sh.qihoo.com/" target="_blank"id="lianjie">好搜新闻</a></td>
+
+<td align="center" id="fenlei">源码</td>
+<td align="center"><a href="http://www.mycodes.net/" target="_blank" id="lianjie">源码之家</a></td>
+<td align="center"><a href="http://www.jb51.net/" target="_blank" id="lianjie">脚本之家</a></td>
+<td align="center"><a href="http://www.codeceo.com/" target="_blank" id="lianjie">码农网</a></td>
+<td align="center"><a href="http://www.suibianlu.com/" target="_blank" id="lianjie">精品源码</a></td>
+</tr>
+</tbody>
+
+<tbody>
+<tr style="background: rgba(45, 43, 43, 0.43);" >
+<td align="center" id="fenlei">推荐</td>
+<td align="center"><a href="https://www.liangshitian.com/tools/music/" target="_blank" id="lianjie1">音乐搜索</a></td>
+<td align="center"><a href="http://tool.chinaz.com/map.aspx" target="_blank" id="lianjie">站长工具</a></td>
+<td align="center"><a href="http://www.ft12.com/" target="_blank" id="lianjie">短网址</a></td>
+<td align="center"><a href="http://wowenda.com/" target="_blank" id="lianjie">云盘搜索</a></td>
+<td align="center" id="fenlei">工具</td>
+
+<td align="center"><a href="https://www.liangshitian.com/tools/passwd/" target="_blank" id="lianjie">密码生成</a></td>
+<td align="center"><a href="https://www.liangshitian.com/tools/zwzpy/" target="_blank" id="lianjie">拼音转换</a></td>
+<td align="center"><a href="https://www.liangshitian.com/tools/onlinedit/" target="_blank" id="lianjie">在线编辑</a></td>
+<td align="center"><a href="https://www.liangshitian.com/tools/ewm/" target="_blank" id="lianjie">二维码生成</a></td>
+
+</tr>
+</tbody>
+</table>
+
+<div class="hidden-xs"> 
+
+<table>
+<table class="table table-responsive table-striped table-bordered table-hover active" >
+<thead>	
+	
+<tr class="active">
+<th rowspan="1" id="zuoce">论坛相关</th>
+<td align="center"><a href="http://bbs.mydigit.cn/" target="_blank" id="lianjie">数码之家</a></td>
+<td align="center"><a href="http://www.miui.com/index.html" target="_blank"id="lianjie">MIUI论坛</a></td>
+<td align="center"><a href="http://www.bathome.net" target="_blank" id="lianjie">批处理之家</a></td>
+<td align="center"><a href="http://wuyou.net/forum.php" target="_blank"id="lianjie">无忧启动</a></td>
+<td align="center"><a href="https://bbs.125.la/" target="_blank" id="lianjie">精易论坛</a></td>
+<td align="center"><a href="http://www.gocloud.cn/bbs/forum.php" target="_blank"id="lianjie">高恪网络</a></td>
+<td align="center"><a href="http://www.right.com.cn/forum/forum.php" target="_blank"id="lianjie">恩山无线</a></td>
+<td align="center"><a href="http://bbs.pcbeta.com/" target="_blank" id="lianjie">远景论坛</a></td>
+
+</tr>
+
+<tr class="success">
+<th rowspan="1" id="zuoce">学习相关</th>
+<td align="center"><a href="http://www.fishc.com/" target="_blank"id="lianjie">鱼C工作室</a></td>
+<td align="center"><a href="http://bbs.51testing.com/forum.php" target="_blank" id="lianjie">51Testing</a></td>
+<td align="center"><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" id="lianjie">Python教程</a></td>
+<td align="center"><a href="https://www.runoob.com/" target="_blank"id="lianjie">菜鸟教程</a></td>
+<td align="center"><a href="http://www.hissummer.com/" target="_blank"id="lianjie">Jmeter教程网</a></td>
+<td align="center"><a href="http://www.testtao.com/" target="_blank"id="lianjie">测试之道</a></td>
+<td align="center"><a href="http://www.51zxw.net/" target="_blank"id="lianjie">自学网</a></td>
+<td align="center"><a href="http://edu.51cto.com/" target="_blank"id="lianjie">51CTO学院</a></td>
+</tr>
+
+<tr class="warning">
+<th rowspan="1" id="zuoce">工具类别</th>
+<td align="center"><a href="http://www.wdku.net/" target="_blank"id="lianjie">超级转换工具</a></td>
+<td align="center"><a href="http://www.bejson.com/ui/compress_img/" target="_blank" id="lianjie">压缩图片</a></td>
+<td align="center"><a href="http://web.airdroid.com/" target="_blank"id="lianjie">Airdroid</a></td>
+<td align="center"><a href="https://www.liangshitian.com/tools/AriaNg" target="_blank"id="lianjie">AriaNg</a></td>
+<td align="center"><a href="http://www.uupoop.com/zp/" target="_blank"id="lianjie">在线PS</a></td>
+<td align="center"><a href="http://xiuxiu.web.meitu.com/" target="_blank"id="lianjie">美图秀秀</a></td>
+<td align="center"><a href="http://tools.jb51.net/" target="_blank"id="lianjie">在线工具大全</a></td>
+<td align="center"><a href="http://ocr.wdku.net/" target="_blank"id="lianjie">在线OCR</a></td>
+</tr>
+
+<tr class="warning">
+<th rowspan="1" id="zuoce">其他类别</th>
+<td align="center"><a href="http://www.zdfans.com/" target="_blank" id="lianjie">软件平台</a></td>
+<td align="center"><a href="https://www.52pojie.cn/forum.php" target="_blank" id="lianjie">吾爱破解</a></td>
+<td align="center"><a href="https://pypi.org/" target="_blank"id="lianjie">PyPi库</a></td>
+<td align="center"><a href="https://github.com/" target="_blank"id="lianjie">Github</a></td>
+<td align="center"><a href="http://msdn.itellyou.cn/" target="_blank" id="lianjie1">M S D N</a></td>
+<td align="center"><a href="https://kodcloud.com/" target="_blank" id="lianjie">可道云</a></td>
+<td align="center"><a href="http://www.coocloud.cn/" target="_blank"id="lianjie">Coo云</a></td>
+<td align="center"><a href="https://habo.qq.com/" target="_blank"id="lianjie">哈勃分析</a></td>
+</tr>
+	
+</table>
+</table>
+
+</div>
+
+<table >
+<table class="table table-striped table-bordered table-hover active" >
+<thead>
+<tr class="active center">
+<th id="dingbu" >网站相关</th>
+<td align="center"><a href="https://www.liangshitian.com/" target="_blank"id="lianjie">站长博客</a></td>
+
+<td align="center"><a href="tencent://message/?uin=512154224" target="_blank"id="lianjie">联系站长</a></td>
+<td align="center"><a href="#" target="_blank"id="lianjie">留言建议</a></td>
+</tr>
+</thead>
+</table>	
+</table>
+
+</div>
+
+<ul class="nav nav-tabs" ">
+<div id="footer">
+<center>
+	 	
+<div id="jnkc">
+<script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
+</div>
+<i class="fa fa-html5"></i> Copyright &copy; 2017-至今 &nbsp;<a href="https://www.liangshitian.com"  title="四天博客">四天</a>&nbsp;&nbsp;
+&nbsp;粤ICP备18005483号
+</center>
+</div>
+</ul>
+
+</body>
+
+<script charset="gbk" src="assets/js/baidu.js"></script>
+<script>
+var sAddress=document.getElementsByTagName("form")[0];
+var sInfor=document.getElementById("search");
+var sBaidu=document.getElementById("baidu");
+var s360sou=document.getElementById("360sou");
+var ssougou=document.getElementById("sougou");
+var syahu=document.getElementById("yahu");
+var sbing=document.getElementById("bing");
+var sGoogle=document.getElementById("google");
+var sGoogle1=document.getElementById("google1");
+var sjd=document.getElementById("jd");
+var stianmao=document.getElementById("tianmao");
+var staobao=document.getElementById("taobao");
+var sWeixin=document.getElementById("weixin");
+var sZhihu=document.getElementById("zhihu");
+var sweibo=document.getElementById("weibo");
+var sdouban=document.getElementById("douban");
+var sgequ=document.getElementById("gequ");
+
+var sWeixin3=document.getElementById("weixin3");
+var stieba=document.getElementById("tieba");
+var sditu=document.getElementById("ditu");
+var swangpan=document.getElementById("wangpan");
+
+//百度
+sBaidu.onclick=function(){
+sAddress.action="https://www.baidu.com/s";
+sInfor.name="wd";
+}
+
+//360搜索
+$('#360sou').click(function() {
+var query = $('#search').val();
+if ( query ) {window.open("https://www.so.com/s?q=" + query , "_blank");
+return false;
+};
+});
+
+//搜狗
+$('#sougou').click(function() {
+var query = $('#search').val();
+if ( query ) {window.open("https://www.sogou.com/web?query=" + query , "_blank");
+return false;
+};
+});
+
+
+//微软
+$('#bing').click(function() {
+var query = $('#search').val();
+if ( query ) {window.open("http://cn.bing.com/search?q=" + query , "_blank");
+return false;
+};
+});
+
+
+//Google已被墙
+//sGoogle.onclick=function(){
+//sAddress.action="http://www.google.com/search";
+//sInfor.name="q";
+//};
+
+//Google镜像
+
+$('#google1').click(function() {
+var query = $('#search').val();
+if ( query ) {window.open("https://f1.aigg.men/search?q=" + query , "_blank");
+return false;
+};
+});
+
+
+//京东（已修复）在移动端访问会跳出两次窗口（已修复）
+ 
+$('#jd').click(function() {
+var query = $('#search').val();
+if ( query ) {
+window.open("http://search.jd.com/Search?enc=utf-8&keyword=" + query, "_blank");
+return false;
+};
+});
+
+
+//天猫搜索需求下 暂时下架
+//stianmao.onclick=function(){
+//sAddress.action="https://list.tmall.com/search_product.htm?";
+//sInfor.name="q";
+////sInfor.type="enc=utf-8";
+//}
+
+//淘宝
+staobao.onclick=function(){
+sAddress.action="https://s.taobao.com/search?";
+sInfor.name="q";
+}
+
+//微信恢复上线
+$('#weixin').click(function() {
+var query = $('#search').val();
+if ( query ) {
+window.open("http://weixin.sogou.com/weixin?type=2&query=" + query + "&ie=utf8", "_blank");
+return false;
+
+};
+});
+
+//知乎
+sZhihu.onclick=function(){
+sAddress.action="https://www.zhihu.com/search";
+sInfor.name="q";
+sInfor.type="question";
+}
+////微博 （检索异常）
+//sweibo.onclick=function(){
+//sAddress.action="http://s.weibo.com/weibo/?";
+////sInfor.name="q";
+////sInfor.type="question";
+//}
+$('#weibo').click(function() {
+var query = $('#search').val();
+if ( query ) {
+window.open("http://s.weibo.com/weibo/" + query, "_blank");
+return false;
+};
+});
+
+//豆瓣
+sdouban.onclick=function(){
+sAddress.action="https://www.douban.com/search?";
+sInfor.name="q";
+//sInfor.type="question";
+}
+//hao123 音乐
+ sgequ.onclick=function(){
+sAddress.action="http://music.hao123.com/search?";
+sInfor.name="key";
+sInfor.type="1";
+}
+
+
+ //改用网易云音乐检索 移动端检索出现异常
+ 
+//$('#gequ').click(function() {
+//var query = $('#search').val();
+//if ( query ) {
+//window.open("http://music.163.com/#/search/m/?s=" + query + "&type=1", "_blank");
+//return false;
+//
+// 	};
+//});
+
+// 胖次另一个检索入口
+
+ $('#panci').click(function() {
+var query = $('#search').val();
+if ( query ) {
+window.open("https://www.lingfengyun.com/search?wd=" + query + "/td_0", "_blank");
+return false;
+ 	};
+});
+
+
+// 胖次另一个检索入口
+
+ $('#ditu').click(function() {
+var query = $('#search').val();
+if ( query ) {
+window.open("http://ditu.amap.com/search?query=" + query + " ", "_blank");
+return false;
+ 	};
+});
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?33119db561c3ed6f1af3ae50457b5104";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
