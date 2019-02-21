@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>菊花文转换工具</title>
+<style type="text/css">
+textarea{width:460px;height:100px;}
+</style>
+</head>
+<p align="center">
+<body>
+<textarea id="in">本人谢绝任何跨省、跨市及本市内追捕行为！</textarea><br />
+<input type="button" value="[̲̅加̲̅边̲̅框̲̅]" id="trans"><input type="button" value="爆҉菊҉花҉" id="trans1"><br />
+<textarea id="out"></textarea>
+
+<script type="text/javascript">
+
+// 事件
+function addEvent(obj, type, fn){
+	if(obj.attachEvent){
+		obj['e'+type+fn] = fn;
+		obj[type+fn] = function(){obj['e'+type+fn](window.event);}
+		obj.attachEvent('on'+type, obj[type+fn]);
+	}else
+		obj.addEventListener( type, fn, false );
+}
+
+// 转换
+function transmute(inStr, type){
+	var code = String.fromCharCode(773) + String.fromCharCode(818);
+	//var code = '&#773&#818';
+	var outStr = '[' + code;
+	for(var i=0,l=inStr.length; i<l; i++){
+		outStr += inStr.charAt(i) + code;
+	}
+	return outStr += ']';
+}
+
+function fuckAss(inStr) {
+	var code = String.fromCharCode(1161);
+	var outStr = '';
+	for(var i=0,l=inStr.length; i<l; i++){
+		outStr += inStr.charAt(i) + code;
+	}
+	return outStr;
+}
+
+
+var input = document.getElementById('in');
+var output = document.getElementById('out');
+var trans =  document.getElementById('trans');
+var trans1 =  document.getElementById('trans1');
+
+addEvent(trans, 'click', function(){
+	output.value = transmute(input.value);
+});
+
+addEvent(trans1, 'click', function(){
+	output.value = fuckAss(input.value);
+});
+
+
+</script>
+
+
+</body>
+
+</p>
+<div id="footer">
+<center> 	
+<div id="jnkc">
+<script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
+</div>
+<i class="fa fa-html5"></i> Copyright &copy; 2017-至今 &nbsp;<a href="https://www.liangshitian.com"  title="四天博客">四天</a>&nbsp;&nbsp;
+&nbsp;粤ICP备18005483号
+</center>
+</div>
+</html>
+
+
+
+
