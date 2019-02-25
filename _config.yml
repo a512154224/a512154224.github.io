@@ -10,9 +10,9 @@ baseurl: ''
 # Navigation links
 nav:
   主页: '/'
-  标签: '/tags.html'
-  归档: '/archives.html'
-  厨艺: '/cooking.html'
+  标签: '/tags'
+  归档: '/archives'
+  厨艺: '/cooking'
   工具: '/tools'
 
 # Footer
