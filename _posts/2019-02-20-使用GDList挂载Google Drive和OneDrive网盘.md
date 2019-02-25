@@ -18,12 +18,12 @@ Github地址：https://github.com/reruin/gdlist
 运行命令：
 
 ## Debian/Ubuntu系统 ##
-apt-get -y install git
+<pre><code class="language-css">apt-get -y install git</code></pre>
 ## CentOS/RHEL系统 ##
-yum -y install git
+<pre><code class="language-css">yum -y install git</code></pre>
 ## 下载源码安装 ##
-git clone https://github.com/reruin/sharelist.git
-cd sharelist && bash install.sh  
+<pre><code class="language-css">git clone https://github.com/reruin/sharelist.git
+cd sharelist && bash install.sh</code></pre>
 完成后，访问http://ip:33001 进入界面开始设置，记住网盘文件夹要共享一下，不然会出现500错误。  
 ![](https://raw.githubusercontent.com/a512154224/a512154224.github.io/master/picture/1004489020.png)  
 注意输入的ID，添加后记得清空缓存。
