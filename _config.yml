@@ -12,6 +12,7 @@ nav:
   主页: '/'
   标签: '/tags.html'
   归档: '/archives.html'
+  厨艺: '/cooking.html'
   工具: '/tools'
 
 # Footer
