@@ -11,7 +11,7 @@ baseurl: ''
 nav:
   主页: '/'
   标签: '/tags.html'
-  归档: 'archives.html'
+  归档: '/archives.html'
   工具: '/tools'
 
 # Footer
