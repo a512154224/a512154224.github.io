@@ -11,6 +11,26 @@ layout: default
 
 
 <main class="tags-content" style="margin-top: 0px">
+  <aside class="g-sidebar-wrapper">
+    
+		<!--友情链接-->
+		<div class="g-sidebar">
+			<p>友情链接</p>
+				<section class="tags-card">
+                    <a href="https://www.youngxj.cn/" target="_blank" class="tag">杨小杰博客</a>
+					<a href="https://agint.me/" target="_blank" class="tag">杂货屋</a>
+					<a href="http://www.senra.me/" target="_blank" class="tag">Senraの小窝</a>
+					<a href="http://www.dyboy.cn/" target="_blank" class="tag">第一资源网</a>
+		<!--		<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
+					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
+					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
+					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
+					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
+					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>   -->
+				</section>
+        </div>
+		<!--友情链接-->
+    </aside>
   <ul class="tags-list" style="padding:40px">
     {% for post in site.posts %}
       
@@ -32,67 +52,7 @@ layout: default
     {% endfor %}
   </ul>
   
-  <aside class="g-sidebar-wrapper">
-        <div class="g-sidebar">
-            <section class="author-card">
-                <div class="avatar">
-                    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="">
-                </div>
-                <div class="author-name" rel="author">{{ site.author }}</div>
-                <div class="bio">
-                    <p>{{ site.bio }}</p>
-                </div>
-                {% if site.sns.size > 0 %}
-                <ul id="sns-links" class="sns-links">
-                    {% for s in site.sns %}
-                    <li>
-                        <a href="{{ s[1] }}" target="_blank">
-                            <i class="iconfont icon-{{ s[0] }}"></i>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </section>
 
-            {% if site.recommend-tags and site.tags.size>0 %}
-            <section class="tags-card">
-                {% for tag in site.tags %}
-                    {% if forloop.index > site.recommend-condition-size %}
-                        {% break %}
-                    {% endif %}
-                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}"   target="_blank" class="tag">{{ tag[0]}}</a>
-                {% endfor %}
-            </section>
-            {% endif %}
-        </div>
-
-        {% if site.search %}
-        <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
-            <i class="iconfont icon-search"></i>
-            <div class="search_result"></div>
-        </div>
-        {% endif %}
-		
-		<!--友情链接-->
-		<div class="g-sidebar">
-			<p>友情链接</p>
-				<section class="tags-card">
-                    <a href="https://www.youngxj.cn/" target="_blank" class="tag">杨小杰博客</a>
-					<a href="https://agint.me/" target="_blank" class="tag">杂货屋</a>
-					<a href="http://www.senra.me/" target="_blank" class="tag">Senraの小窝</a>
-					<a href="http://www.dyboy.cn/" target="_blank" class="tag">第一资源网</a>
-		<!--		<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
-					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
-					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
-					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
-					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>
-					<a href="https://www.liangshitian.com/" target="_blank" class="tag">四天博客</a>   -->
-				</section>
-        </div>
-		<!--友情链接-->
-    </aside>
 	
 </main>
 {% include footer.html %}
