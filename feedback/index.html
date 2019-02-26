@@ -2,8 +2,19 @@
 title: 意见反馈
 layout: default
 ---
-
-{% include header.html %}
+<header class="g-header">
+    <div class="g-logo">
+      <a href="{{ "/" | relative_url }}"></a>
+    </div>
+    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <nav class="g-nav">
+        <ul>
+            {% for i in site.nav %}
+            <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
 
 <div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
     <h2>意见反馈</h2>
