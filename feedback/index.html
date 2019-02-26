@@ -37,7 +37,7 @@ function send(){
 	url = url + "昵称-" + document.getElementById("name").value + "_EMAIL-" + document.getElementById("email").value + "&desp=" + document.getElementById("content").value;
 	var request = new XMLHttpRequest();
 	request.open("POST", url);
-	request.send("request")
+	request.send();
 	alert("发送成功！");
 	document.getElementById('name').value="";
 	document.getElementById('email').value="";
