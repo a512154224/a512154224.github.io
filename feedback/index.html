@@ -36,12 +36,12 @@ function down(){
 	var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
 	var content = document.getElementById("content").value;
-	var url = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=主1人服务器又挂掉啦~&desp=呵1呵"
+	var test1 = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text="
+	var test2 = "&desp="
+	var url = eval(test1 + name + email + test2 + content
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
-	alert(name);
-	alert(email);
-	alert(content);
+	alert(url);
 	}
 </script>
 {% include footer.html %}
