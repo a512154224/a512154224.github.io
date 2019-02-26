@@ -39,6 +39,9 @@ function send(){
 	request.open("POST", url);
 	request.send("request")
 	alert("发送成功！");
+	document.getElementById('name').value="";
+	document.getElementById('email').value="";
+	document.getElementById('content').value="";
 	}
 </script>
 {% include footer.html %}
