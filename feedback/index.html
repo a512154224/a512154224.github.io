@@ -25,26 +25,19 @@ input{margin-top: 3px;}
 	<span class="label label-info">昵  称: </span><input type="text" id="name" placeholder="请输入昵称~~~" class="form-control">
 	<span class="label label-info">邮  箱: </span><input type="text" id="email" placeholder="请输入邮箱~~~" class="form-control">
 	<span class="label label-info">内  容: </span><textarea rows="11" cols="20" id="content" placeholder="请输入内容~~~" class="form-control"></textarea>
-	<button class="btn btn-sm btn-success" onmousedown="down()" onmouseup="">提交</button>
+	<button class="btn btn-sm btn-success" onmousedown="send()" onmouseup="">提交</button>
 </form>
 			</div> 
 		</div>
 	</div>
 </body>
 <script>
-function down(){
-	var nickname = "昵称-";
-	var name = document.getElementById("name").value;
-	var nickemail = "-EMAIL-";
-	var email = document.getElementById("email").value;
-	var text = eval(nickname+name+nickemail+email);
-	var content = document.getElementById("content").value;
-	var turl = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=";
-	var desp = "&desp=";
-	var url = eval(turl+text+desp+content);
+function send(){
+	var url = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=";
+	url = url + "昵称-" + document.getElementById("name").value + "_EMAIL-" + document.getElementById("email").value + "&desp=" + document.getElementById("content").value;
 	var request = new XMLHttpRequest();
-	request.open("GET", url);
-	request.send("test")
+	request.open("POST", url);
+	request.send("request")
 	alert("发送成功！");
 	}
 </script>
