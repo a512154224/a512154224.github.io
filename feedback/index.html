@@ -36,17 +36,15 @@ function down(){
 	var nickname = "昵称-";
 	var name = document.getElementById("name").value;
 	var nickemail = "-EMAIL-";
-	var mail = document.getElementById("email").value;
+	var email = document.getElementById("email").value;
 	var text = eval(nickname+name+nickemail+email);
-	alert(text);
-    var email = document.getElementById("email").value;
 	var content = document.getElementById("content").value;
-	var test1 = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=";
-	var test2 = "&desp=";
-	var url = eval(test1 + name + email + test2 + content);
+	var turl = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=";
+	var desp = "&desp=";
+	var url = eval(turl+text+desp+content);
 	var request = new XMLHttpRequest();
 	request.open("GET", url);
-	
+	request.send("test")
 	}
 </script>
 {% include footer.html %}
