@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HandyEditor</title>
+    <style type="text/css">
+    small{font-size: 14px;color: #aaa;}
+    pre{padding: 5px;background-color: #eee;}
+    .textcenter{text-align: center;}
+    </style>
+  </head>
+  <body>
+    <h1>HandyEditor <small>一款十分轻便且使用方便的所见即所得富文本web编辑器</small></h1>
+
+    <textarea id="editor" name="editor" rows="5" style="display: none;"></textarea>
+    <br>
+    <button onclick="getHtml()">获取HTML</button>&nbsp;&nbsp;
+    <button onclick="getText()">获取纯文本</button>
+    <br><br>
+    <div id="footer">
+<center>
+	 	
+<div id="jnkc">
+<script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);</script>
+</div>
+<i class="fa fa-html5"></i> Copyright &copy; 2017-至今 &nbsp;<a href="https://www.liangshitian.com/"  title="四天博客">四天</a>&nbsp;&nbsp;
+&nbsp;粤ICP备18005483号
+</center>
+</div>
+    <br>
+
+    <script src="HandyEditor.min.js"></script>
+    <script type="text/javascript">
+      var he = HE.getEditor('editor');
+      function getHtml(){
+        alert(he.getHtml());
+      }
+      function getText(){
+        alert(he.getText());
+      }
+    </script>
+  </body>
+</html>
