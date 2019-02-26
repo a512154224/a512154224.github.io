@@ -31,17 +31,28 @@ input{margin-top: 3px;}
 		</div>
 	</div>
 </body>
-<script>
-function send(){
-	var url = "https://sc.ftqq.com/SCU8191Tc975647e60b2aedf207662a6c89def5d5ac9db056aaf3.send?text=";
-	url = url + "昵称-" + document.getElementById("name").value + "_EMAIL-" + document.getElementById("email").value + "&desp=" + document.getElementById("content").value;
-	var request = new XMLHttpRequest();
-	request.open("POST", url);
-	request.send();
-	alert("发送成功！");
-	document.getElementById('name').value="";
-	document.getElementById('email').value="";
-	document.getElementById('content').value="";
-	}
+<script type="text/javascript">
+    if (window.XMLHttpRequest)
+    {
+        xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.open("GET","url.xml",false);
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;
+    var url = xmlDoc.getElementsByTagName("url1")[0].childNodes[0].nodeValue;
+	function send(){
+		url = url + "昵称-" + document.getElementById("name").value + "_EMAIL-" + document.getElementById("email").value + "&desp=" + document.getElementById("content").value;
+		var request = new XMLHttpRequest();
+		request.open("POST", url);
+		request.send();
+		alert("发送成功！");
+		document.getElementById('name').value="";
+		document.getElementById('email').value="";
+		document.getElementById('content').value="";
+		}
 </script>
 {% include footer.html %}
