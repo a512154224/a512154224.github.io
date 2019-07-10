@@ -1,0 +1,26 @@
+---
+layout: post
+title: '分享三个Aria2的web前端'
+date: 2019-07-10
+author: 四天
+tags:
+      - aria2
+      - 下载
+      - html
+
+---
+看图说话吧！
+
+AriaNg：
+
+<img class="alignnone size-medium" src="https://raw.githubusercontent.com/im201907/annex/master/20190705173500.jpg" width="1139" height="476" />
+
+webui-aria2：
+
+<img class="alignnone size-medium" src="https://raw.githubusercontent.com/im201907/annex/master/20190705173607.jpg" width="825" height="799" />
+
+yaaw：
+
+<img class="alignnone size-medium" src="https://raw.githubusercontent.com/im201907/annex/master/20190705173705.jpg" width="1275" height="349" />
+
+<a href="http://www.liangshitian.top/blog/download.php?url=https://pan.baidu.com/s/1AO29aBsCdGLQ4U-txXxUOA" target="_blank" rel="noopener">点我下载（提取码： jib9）</a>
